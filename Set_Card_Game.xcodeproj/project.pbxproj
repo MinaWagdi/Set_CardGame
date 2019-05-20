@@ -9,20 +9,23 @@
 /* Begin PBXBuildFile section */
 		319457E12271C6D300D5B752 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319457E02271C6D300D5B752 /* Game.swift */; };
 		31DA7C61226F0E6F00B9D7D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DA7C60226F0E6F00B9D7D9 /* AppDelegate.swift */; };
-		31DA7C63226F0E6F00B9D7D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DA7C62226F0E6F00B9D7D9 /* ViewController.swift */; };
+		31DA7C63226F0E6F00B9D7D9 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DA7C62226F0E6F00B9D7D9 /* Controller.swift */; };
 		31DA7C66226F0E6F00B9D7D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31DA7C64226F0E6F00B9D7D9 /* Main.storyboard */; };
 		31DA7C68226F0E7100B9D7D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31DA7C67226F0E7100B9D7D9 /* Assets.xcassets */; };
 		31DA7C6B226F0E7100B9D7D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31DA7C69226F0E7100B9D7D9 /* LaunchScreen.storyboard */; };
 		31DA7C75226F0EB400B9D7D9 /* Features.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DA7C74226F0EB400B9D7D9 /* Features.swift */; };
 		31DA7C77226F109000B9D7D9 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DA7C76226F109000B9D7D9 /* Card.swift */; };
 		31DA7C79226F133E00B9D7D9 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DA7C78226F133E00B9D7D9 /* Set.swift */; };
+		31EBAFC8228E1840007DCC26 /* Originator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EBAFC7228E1840007DCC26 /* Originator.swift */; };
+		31EBAFCA228E190E007DCC26 /* Memento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EBAFC9228E190E007DCC26 /* Memento.swift */; };
+		31EBAFCC228E1A20007DCC26 /* Caretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EBAFCB228E1A20007DCC26 /* Caretaker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		319457E02271C6D300D5B752 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		31DA7C5D226F0E6F00B9D7D9 /* Set_Card_Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Set_Card_Game.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31DA7C60226F0E6F00B9D7D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		31DA7C62226F0E6F00B9D7D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		31DA7C62226F0E6F00B9D7D9 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		31DA7C65226F0E6F00B9D7D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31DA7C67226F0E7100B9D7D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31DA7C6A226F0E7100B9D7D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -30,6 +33,9 @@
 		31DA7C74226F0EB400B9D7D9 /* Features.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features.swift; sourceTree = "<group>"; };
 		31DA7C76226F109000B9D7D9 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		31DA7C78226F133E00B9D7D9 /* Set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
+		31EBAFC7228E1840007DCC26 /* Originator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Originator.swift; sourceTree = "<group>"; };
+		31EBAFC9228E190E007DCC26 /* Memento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memento.swift; sourceTree = "<group>"; };
+		31EBAFCB228E1A20007DCC26 /* Caretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caretaker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +73,14 @@
 				31DA7C78226F133E00B9D7D9 /* Set.swift */,
 				319457E02271C6D300D5B752 /* Game.swift */,
 				31DA7C60226F0E6F00B9D7D9 /* AppDelegate.swift */,
-				31DA7C62226F0E6F00B9D7D9 /* ViewController.swift */,
+				31DA7C62226F0E6F00B9D7D9 /* Controller.swift */,
 				31DA7C64226F0E6F00B9D7D9 /* Main.storyboard */,
 				31DA7C67226F0E7100B9D7D9 /* Assets.xcassets */,
 				31DA7C69226F0E7100B9D7D9 /* LaunchScreen.storyboard */,
 				31DA7C6C226F0E7100B9D7D9 /* Info.plist */,
+				31EBAFC7228E1840007DCC26 /* Originator.swift */,
+				31EBAFC9228E190E007DCC26 /* Memento.swift */,
+				31EBAFCB228E1A20007DCC26 /* Caretaker.swift */,
 			);
 			path = Set_Card_Game;
 			sourceTree = "<group>";
@@ -150,8 +159,11 @@
 				31DA7C79226F133E00B9D7D9 /* Set.swift in Sources */,
 				319457E12271C6D300D5B752 /* Game.swift in Sources */,
 				31DA7C75226F0EB400B9D7D9 /* Features.swift in Sources */,
-				31DA7C63226F0E6F00B9D7D9 /* ViewController.swift in Sources */,
+				31DA7C63226F0E6F00B9D7D9 /* Controller.swift in Sources */,
 				31DA7C61226F0E6F00B9D7D9 /* AppDelegate.swift in Sources */,
+				31EBAFCA228E190E007DCC26 /* Memento.swift in Sources */,
+				31EBAFCC228E1A20007DCC26 /* Caretaker.swift in Sources */,
+				31EBAFC8228E1840007DCC26 /* Originator.swift in Sources */,
 				31DA7C77226F109000B9D7D9 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5894K57B6;
 				INFOPLIST_FILE = Set_Card_Game/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -316,6 +329,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5894K57B6;
 				INFOPLIST_FILE = Set_Card_Game/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

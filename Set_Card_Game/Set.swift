@@ -21,7 +21,7 @@ struct Set{
         return false
     }
     
-    mutating func CancelCard(card: Card, index: Int){
+    mutating func removeCardFromSet(card: Card, index: Int){
         if(card == card1.card && index == card1.IndexOfCardInGameCardArray){
             card1.card = nil
             card1.IndexOfCardInGameCardArray=nil
@@ -33,8 +33,16 @@ struct Set{
             card3.IndexOfCardInGameCardArray=nil
         }
     }
+    mutating func setCards(cards:((Card?,Int?),(Card?,Int?),(Card?,Int?))){
+        card1 = cards.0
+        card2=cards.1
+        card3=cards.2
+    }
+    func getAllCardsInSet()->((Card?,Int?),(Card?,Int?),(Card?,Int?)){
+        return (card1,card2,card3)
+    }
     
-    mutating func CancelAllCardsinSet(){
+    mutating func RemoveAllCardsFromSet(){
         card1.card = nil
         card1.IndexOfCardInGameCardArray=nil
         card2.card = nil
@@ -43,7 +51,7 @@ struct Set{
         card3.IndexOfCardInGameCardArray=nil
     }
     
-    mutating func addCard(card:Card, index: Int){
+    mutating func addCardToSet(card:Card, index: Int){
         if card1.card==nil && card1.IndexOfCardInGameCardArray==nil{
             card1.card=card
             card1.IndexOfCardInGameCardArray=index
