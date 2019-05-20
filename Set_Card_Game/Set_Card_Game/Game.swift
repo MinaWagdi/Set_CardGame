@@ -13,10 +13,8 @@ struct Game{
     var cards = [Card]()
     var IndexToCardsArray:Int = 0 // to indicate to which card index we have shown in our view
     var set = Set()
-    static let shared = Game()
-    var score = 0
     
-    private init() {
+    init() {
         for shape in Shape.all(){
             for numberOfShapes in NumberOfShapes.all(){
                 for color in Color.all(){
@@ -30,8 +28,4 @@ struct Game{
         cards.shuffle()
         
     }
-//    func sad()-> Game{
-//        let g = Game()
-//        return g
-//    }
 }
