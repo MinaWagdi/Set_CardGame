@@ -163,7 +163,7 @@ class Controller: UIViewController {
     
     @IBAction func touchCard(_ sender: UIButton) {
         if sender.backgroundColor != UIColor.clear{
-            saveState()
+            
             let index = Cards.index(of:sender)
             // loop on all the cards available on the screen to search for the index of the card touched in the Model's game cards instance
             for gameCardIndex in GameCardIndexVsButtonIndexDictionary.keys{
@@ -171,9 +171,11 @@ class Controller: UIViewController {
                 if GameCardIndexVsButtonIndexDictionary[gameCardIndex]==index && game.cards[gameCardIndex].isPartOfSet == false{
                     print("Color is : \(game.cards[gameCardIndex].color)")
                     if game.cards[gameCardIndex].isSelected == false && NumberOfSelectedButton < 3{
+                        saveState()
                         SelectButton(sender: sender,gameCardIndex: gameCardIndex )
                         game.set.addCardToSet(card: game.cards[gameCardIndex],index: gameCardIndex)
                     }else if game.cards[gameCardIndex].isSelected == true{
+                        saveState()
                         diselectButton(sender: sender, gameCardIndex: gameCardIndex)
                         game.set.removeCardFromSet(card: game.cards[gameCardIndex],index: gameCardIndex)
                     }else{
